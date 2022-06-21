@@ -1,7 +1,16 @@
 # Curated list of SPIFFE and SPIRE resources
 
-## Video
+## Content
 
+- [Video](#video)
+    - [SPIFFE and SPIRE Introduction](#spiffe-and-spire-introduction)
+    - [Advanced topics](#advanced-topics)
+- [Blog posts](#blogs)
+- [Utils](#utils)
+- [SDK](#sdk)
+- [Examples](#examples)
+
+## Video
 
 ### SPIFFE and SPIRE Introduction
 
@@ -70,6 +79,8 @@ _A great place to start. Introduction to different concepts and integrations_
     - Evan Gilman
     - December 2017
     - KubeCon NA
+
+**[⬆ back to top](#content)**
 
 ### Advanced topics
 _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced use-cases and deployemnt/operation models_
@@ -243,15 +254,52 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - Integrations
     - Importance of different data types, What are telemetry, logging, tracing, and audit data. Simple-secrets case study and demo of integrating with envoy and spire.
 
+**[⬆ back to top](#content)**
 
 ## Blogs
 
 
 - [AWS OIDC Authentication with SPIFFE](https://developer.squareup.com/blog/aws-oidc-authentication-with-spiffe/)
-    - Easy authentication with automated AWS credentials
+    - Easy authentication with automated AWS credentials. Federation with AWS.
 
 - [Providing mTLS Identities to Lambdas](https://developer.squareup.com/blog/providing-mtls-identities-to-lambdas/)
-    - Securing severless communication with our data centers
+    - Securing severless communication with our data centers.
+
+- [Azure AD workload identity federation with SPIFFE and SPIRE](https://blog.identitydigest.com/azuread-federate-spiffe/)
+    - SPIFFE federation with Azure Cloud.
+
+- [Using mTLS with SPIFFE/SPIRE in AWS App Mesh on Amazon EKS](https://aws.amazon.com/blogs/containers/using-mtls-with-spiffe-spire-in-app-mesh-on-eks/)
+    - SPIFFE federation with AWS cloud.
+
+- [SPIFFE/SPIRE Federation on Kind clusters](https://techblog.cisco.com/blog/spire-federation-kind)
+    - SPIFFE federation.
+
+- [Shepherding your Cloud Native “cattle” with Tornjak](https://medium.com/universal-workload-identity/shepherding-your-cloud-native-cattle-with-tornjak-eb0b9a7c96bc)
+    - Introduction to project Tornjak
+
+**[⬆ back to top](#content)**
+
+### SDK
+
+- [go spiffe](https://github.com/spiffe/go-spiffe)
+    - This library is a convenient Go library for working with SPIFFE.
+
+- [java spiffe](https://github.com/spiffe/java-spiffe)
+    - Java SPIFFE Library.
+
+- [c spiffe](https://github.com/HewlettPackard/c-spiffe)
+    - C SPIFFE library.
+
+- [python spiffe](https://github.com/HewlettPackard/py-spiffe)
+    - This SPIFFE library provides a Workload API client to fetch X.509 and JWT SVIDs and trust bundles. **Important:** This library currently doesn't provide any functionality to support TLS connections using SPIFFE certificates.
+
+- [rust spire-workload-rs](https://github.com/bytedance/spire-workload-rs)
+    - This crate provides a number of useful APIs to help Rust programs use Spire workload API.
+
+- [rust-spiffe](https://github.com/maxlambrecht/rust-spiffe)
+    - An utility library to interact with the SPIFFE Workload API to fetch X.509 and JWT SVIDs and Bundles. It also provides types that comply with the SPIFFE standards.
+
+**[⬆ back to top](#content)**
 
 ## Utils
 
@@ -266,3 +314,59 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 - [spiffe-aws-assume-role](https://github.com/square/spiffe-aws-assume-role)
     - This tool allows using a SPIFFE JWT to authenticate to AWS APIs
+
+- [Tornjak](https://github.com/spiffe/tornjak)
+    - The project aims to provide a management plane and capabilities for SPIFFE identities managed by SPIRE. The goals are to provide global visibility, auditability, and configuration and policy management for identities.
+
+- [SPIFFE Helper](https://github.com/spiffe/spiffe-helper)
+    - The SPIFFE Helper is a simple utility for fetching X.509 SVID certificates from the SPIFFE Workload API, launch a process that makes use of the certificates and continuously get new certificates before they expire. The launched process is signaled to reload the certificates when is needed.
+
+- [cert-manager csi-driver-spiffe](https://github.com/cert-manager/csi-driver-spiffe)
+    - csi-driver-spiffe is a Container Storage Interface (CSI) driver plugin for Kubernetes to work along cert-manager. This CSI driver transparently delivers SPIFFE SVIDs in the form of X.509 certificate key pairs to mounting Kubernetes Pods.
+
+- [NGINX with SPIFFE support](https://github.com/MarcosDY/spiffe-nginx)
+    - This version of NGINX Open Source interacts with the SPIFFE Workload API to request and use certificates for mTLS.
+
+- [Kafka SPIFFE Principal Builder](https://github.com/traiana/kafka-spiffe-principal)
+    - A custom KafkaPrincipalBuilder implementation for Apache Kafka. This class and documentation deals only with SslAuthenticationContext, we do not support any other context at the moment (Kerberos, SASL, Oauth)
+
+- [Emissary](https://github.com/github/emissary)
+    - This is a service that communicates with spire-agent to fetch and validate JWT-SVIDs sent to it over HTTP, usually from envoy using ext_authz.
+
+- [SPIFFE Vault](https://github.com/philips-labs/spiffe-vault)
+    - Integrates SPIFFE SVID authentication with Hashicorp Vault to retrieve a `VAULT_TOKEN`. Example usecases
+        - Read secrets from Hashicorp Vault Hashicorp Vault without providing a secret to authenticate against Hashicorp Vault. Instead we will be using a SPIFFE SVID to authenticate ourself against Hashicorp Vault.
+        - Perform secretless/keyless code signing by utilizing the Hashicorp Vault Transit engine as a software defined HSM. This resolves the issue of having signing keys on a local machine as well resolves the issue of managing secrets to access the signing keys. Again we utilize the SPIFFE SVID to authenticate against Hashicorp Vault.
+
+- [Kerberos-Attestor](https://github.com/nks5295/kerberos-attestor)
+    - The Kerberos-Attestor is a plugin for the SPIRE server and agent that allows SPIRE to automatically attest nodes that are joined to a domain backed by the Kerberos authentication protocol. 
+
+- [SPIRE TPM Plugin](https://github.com/bloomberg/spire-tpm-plugin)
+    - This repository contains agent and server plugins for SPIRE to allow TPM 2-based node attestation.
+
+- [SPIRE Tailscale Plugin](https://github.com/jsiebens/spire-tailscale-plugin)
+    - This node attestation plugin relies on a Tailscale OIDC id-token feature, which is marked as Work-in-Progress and may not be available for everyone yet.
+
+**[⬆ back to top](#content)**
+
+### Examples
+
+- [Istio Identities with SPIFFE/SPIRE](https://github.com/IBM/istio-spire)
+    - The scripts in this repository demonstrate how to replace the identity-issuing mechanism of Istio with that of Spire.
+
+- [spiffe-user-demo](https://github.com/JackOfMostTrades/spiffe-user-demo)
+    - This is a proof of concept project that runs a SPIFFE Workload API service meant to provide user-based SVIDs on developer endpoints, bootstrapped from an SSO login. This demo in particular integrates with OIDC providers to enable user login, but generalizes to any web application SSO.
+
+- [Java SPIFFE examples](https://github.com/maxlambrecht/java-spiffe-examples)
+    - A bunch of java-spiffe use examples
+
+- [SPIRE and SGX-SCONE](https://github.com/ufcg-lsd/spire-scone-demo)
+    -  Issuing SPIFFE IDs to SGX Confidential Workloads
+
+- [opa-spiffe-oidc](https://github.com/ashutosh-narkar/opa-spiffe-oidc)
+    - This repository contains the code for the OPA-SPIFFE OIDC Demo.
+
+- [spire-envoy-kafka](https://github.com/flobuehr/spire-envoy-kafka)
+    - Data exchange demo - Kafka integrated with Envoy proxy and SPIRE
+
+**[⬆ back to top](#content)**
