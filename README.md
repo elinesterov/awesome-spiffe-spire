@@ -32,6 +32,7 @@ _A great place to start. Introduction to different concepts and integrations_
     - HPE DEV MUNCH and LEARN
     - Introduction, Integrations
     - Challenges to secure hybrid environment, identity-based security, SPIFFE and SPIRE 101, architecture, deployment models, federation, what is service-mesh, what is istio, What is Mithril, Istio + SPIRE Integration, demo
+
 - [SPIFFE: In Theory and in Practice](https://www.youtube.com/watch?v=DXE6CDJjDV4)
     - Evan Gilman & Andrew Harding, VMware
     - October 2021
@@ -209,14 +210,12 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - Case study
     - The scale of the company and Infrastructure, Service authentication, challenges, Kafka integration, trust domain federation, benefits using SPIRE, and remaining challenges
 
-
 - [Operationalizing SPIRE at Square](https://www.youtube.com/watch?v=KP9rME3zw6g)
     - Matthew McPherrin
     - March 2020
     - SPIFFE and SPIRE Meetup
     - Case study, Operations
     - Square hybrid multi-cloud architecture, SPIFFE arch overview,  Architect for reliability: Datastore,  dealing with datastore failures, region failure, spire server failure, spire agent failures, no identity issued, monitoring spire, custom logging with SPIRE, recovering from failures. 
-
 
 - [Observability in SPIRE at Scale](https://www.youtube.com/watch?v=nIRy_aI0E5k&list=PLAtJVtsZ0KWZSRIsOfK4CQeVKNqNKe0_7&index=9)
     - Andrew Moore
@@ -239,7 +238,6 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - Practical design decisions, Operations
     - The concept of the root of trust,  What is SPIFFE, SPIRE Architecture, short-lived credentials vs revocation, Registration challenges, Scaling registration,  Per-cluster vs per-host workload registration, TTL: security vs Reliability
 
-
 - [Integrating SPIRE with workload schedulers](https://www.youtube.com/watch?v=H5IlmYmEDKk&t=4745s)
     - Tyler Dixon, Uber
     - May 2019
@@ -258,6 +256,8 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 ## Blogs
 
+- [Hardening Istio security with SPIRE](https://blog.spiffe.io/hardening-istio-security-with-spire-d2f4f98f7a63)
+   - Istio and SPIRE integration.
 
 - [AWS OIDC Authentication with SPIFFE](https://developer.squareup.com/blog/aws-oidc-authentication-with-spiffe/)
     - Easy authentication with automated AWS credentials. Federation with AWS.
@@ -351,8 +351,8 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 ### Examples
 
-- [Istio Identities with SPIFFE/SPIRE](https://github.com/IBM/istio-spire)
-    - The scripts in this repository demonstrate how to replace the identity-issuing mechanism of Istio with that of Spire.
+- [Istio Identities with SPIFFE/SPIRE](https://istio.io/latest/docs/ops/integrations/spire/)
+    - How to replace the identity-issuing mechanism of Istio with that of SPIRE.
 
 - [spiffe-user-demo](https://github.com/JackOfMostTrades/spiffe-user-demo)
     - This is a proof of concept project that runs a SPIFFE Workload API service meant to provide user-based SVIDs on developer endpoints, bootstrapped from an SSO login. This demo in particular integrates with OIDC providers to enable user login, but generalizes to any web application SSO.
