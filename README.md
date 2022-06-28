@@ -259,7 +259,7 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 - [SPIFFE/SPIRE CSI Driver](https://www.kusari.dev/blog/spiffee-csi/)
     - Deploying SPIRE with CSI Driver
 
-- [Envoy[, SPIRE](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/),[ and OPA](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/)](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/)
+- [Envoy, SPIRE, and OPA](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/)
     - Zero Trust with Envoy, SPIRE, and Open Policy Agent (OPA)
 
 - [Hardening Istio security with SPIRE](https://blog.spiffe.io/hardening-istio-security-with-spire-d2f4f98f7a63)
