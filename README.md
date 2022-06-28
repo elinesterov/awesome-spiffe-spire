@@ -1,4 +1,4 @@
-# Curated list of SPIFFE and SPIRE resources
+# A curated list of SPIFFE and SPIRE resources
 
 ## Content
 
@@ -16,7 +16,7 @@
 
 _A great place to start. Introduction to different concepts and integrations_
 
-- [10 minites introduciton to SPIFFE and SPIRE](https://www.youtube.com/watch?v=Q2SiGeebRKY)
+- [10 minutes introduction to SPIFFE and SPIRE](https://www.youtube.com/watch?v=Q2SiGeebRKY)
     - February 2020
     - Evan Gilman
 
@@ -54,7 +54,7 @@ _A great place to start. Introduction to different concepts and integrations_
 
 - [TGI Kubernetes 094: SPIFFE and SPIRE](https://youtu.be/cx__8khtih4?t=1019)
     - Joe Beda
-    - Ocotber 2019
+    - October 2019
     - History of SPIFFE, SPIFFE ID, SVID, etc. SPIRE concepts. Demo with k8s
 
 - [Securing Multi-Cloud Cross-Cluster Communication with SPIFFE and SPIRE](https://www.youtube.com/watch?v=sLN11qAFAC4)
@@ -84,7 +84,7 @@ _A great place to start. Introduction to different concepts and integrations_
 **[⬆ back to top](#content)**
 
 ### Advanced topics
-_Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced use-cases and deployemnt/operation models_
+_Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced use-cases and deployment/operation models_
 
 - [SPIRE: Intro & Deep Dive Into Windows Support](https://www.youtube.com/watch?v=pcyOnX08jHs)
     - Agustín Martínez Fayó & Marcos Yacob
@@ -147,14 +147,14 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - Integrations
     - What is PARSEC, Parsec architecture, Multitenancy in parsec, Integrating PSIRE and Parsec for authentication of clients, demo
 
-- [Sneak Peek Severless support](https://www.youtube.com/watch?v=6Jwe4IIGWvs)
+- [Sneak Peek Serverless support](https://www.youtube.com/watch?v=6Jwe4IIGWvs)
     - Agustín Martínez 
     - February 2021
     - SPIFFE and SPIRE Meetup
     - Advanced architecture
     - Challenges of supporting serverless identities, architecture
 
-- [AWS App Mesh, Mutual TLS and SPIRESPIRE Integration](https://www.youtube.com/watch?v=m38vZrMNLzw)
+- [AWS App Mesh, Mutual TLS, and SPIRE Integration](https://www.youtube.com/watch?v=m38vZrMNLzw)
     - Efe Selcuk
     - February 2021
     - SPIFFE and SPIRE Meetup
@@ -228,7 +228,7 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - Evan Gilman & Oliver Liu
     - November 2019
     - KubeCon NA
-    - Integraitons
+    - Integrations
     - What is a ServiceMesh, SPIFFE, Identity and service mesh, Hybrid and multi-mesh examples, Different identity authority architectures, SPIFFE Federation as the exchange of trust, Istio and SPIRE federation, Demo, 
 
 - [Scaling SPIRE for Performance and Availability](https://www.youtube.com/watch?v=uF_fU-ngXxY&list=PLj6h78yzYM2NDs-iu8WU5fMxINxHXlien)
@@ -236,14 +236,14 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - November 2019
     - KubeCon NA
     - Practical design decisions, Operations
-    - The concept of the root of trust,  What is SPIFFE, SPIRE Architecture, short-lived credentials vs revocation, Registration challenges, Scaling registration,  Per-cluster vs per-host workload registration, TTL: security vs Reliability
+    - The concept of the root of trust,  What is SPIFFE, SPIRE Architecture, short-lived credentials vs. revocation, Registration challenges, Scaling registration,  Per-cluster vs. per-host workload registration, TTL: security vs. Reliability
 
 - [Integrating SPIRE with workload schedulers](https://www.youtube.com/watch?v=H5IlmYmEDKk&t=4745s)
     - Tyler Dixon, Uber
     - May 2019
     - SPIFFE Community Day
     - Design decisions, Integrations
-    - Background, Workload registration strategies, workload lifecycle readiness check, liveness check and relation to registration and resilience.
+    - Background, Workload registration strategies, workload lifecycle readiness check, liveness check, and relation to registration and resilience.
 
 - [Securing Application Telemetry & Tracing with SPIFFE and Envoy](https://www.youtube.com/watch?v=_OzG4PHihSk)
     - Sabree Blackmon, Docker
@@ -259,8 +259,8 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 - [SPIFFE/SPIRE CSI Driver](https://www.kusari.dev/blog/spiffee-csi/)
     - Deploying SPIRE with CSI Driver
 
-- [Envoy, SPIRE and OPA](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/)
-    - Zero Trust with Envoy, SPIRE and Open Policy Agent (OPA)
+- [Envoy[, SPIRE](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/),[ and OPA](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/)](https://www.styra.com/blog/zero-trust-with-envoy-spire-and-open-policy-agent-opa/)
+    - Zero Trust with Envoy, SPIRE, and Open Policy Agent (OPA)
 
 - [Hardening Istio security with SPIRE](https://blog.spiffe.io/hardening-istio-security-with-spire-d2f4f98f7a63)
    - Istio and SPIRE integration.
@@ -269,7 +269,7 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - Easy authentication with automated AWS credentials. Federation with AWS.
 
 - [Providing mTLS Identities to Lambdas](https://developer.squareup.com/blog/providing-mtls-identities-to-lambdas/)
-    - Securing severless communication with our data centers.
+    - Securing serverless communication with our data centers.
 
 - [Azure AD workload identity federation with SPIFFE and SPIRE](https://blog.identitydigest.com/azuread-federate-spiffe/)
     - SPIFFE federation with Azure Cloud.
@@ -303,7 +303,7 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - This crate provides a number of useful APIs to help Rust programs use Spire workload API.
 
 - [rust-spiffe](https://github.com/maxlambrecht/rust-spiffe)
-    - An utility library to interact with the SPIFFE Workload API to fetch X.509 and JWT SVIDs and Bundles. It also provides types that comply with the SPIFFE standards.
+    - A utility library to interact with the SPIFFE Workload API to fetch X.509 and JWT SVIDs and Bundles. It also provides types that comply with the SPIFFE standards.
 
 **[⬆ back to top](#content)**
 
@@ -334,7 +334,7 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
     - This version of NGINX Open Source interacts with the SPIFFE Workload API to request and use certificates for mTLS.
 
 - [Kafka SPIFFE Principal Builder](https://github.com/traiana/kafka-spiffe-principal)
-    - A custom KafkaPrincipalBuilder implementation for Apache Kafka. This class and documentation deals only with SslAuthenticationContext, we do not support any other context at the moment (Kerberos, SASL, Oauth)
+    - A custom KafkaPrincipalBuilder implementation for Apache Kafka. This class and documentation deal only with SslAuthenticationContext, we do not support any other context at the moment (Kerberos, SASL, Oauth)
 
 - [Emissary](https://github.com/github/emissary)
     - This is a service that communicates with spire-agent to fetch and validate JWT-SVIDs sent to it over HTTP, usually from envoy using ext_authz.
