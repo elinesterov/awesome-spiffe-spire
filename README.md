@@ -312,6 +312,9 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 ## Utils
 
+- [SPIRE HELM Charts](https://github.com/philips-labs/helm-charts/tree/main/charts/spire)
+    - https://github.com/philips-labs/helm-charts/tree/main/charts/spire
+
 - [spire-oidc-discovery-provider](https://github.com/spiffe/spire/tree/main/support/oidc-discovery-provider)
     - The SPIRE OIDC Discovery Provider is a small helper that provides a minimal implementation of a subset of the OIDC discovery document as related to exposing a JSON Web Key Set (JWKS) for JSON Web Token (JWT) validation.
 
