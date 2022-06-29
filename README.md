@@ -256,6 +256,9 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 ## Blogs
 
+- [Going secretless and keyless with Spiffe Vault](https://marcofranssen.nl/going-secretless-and-keyless-with-spiffe-vault)
+    - In this blogpost I want to introduce you to a small commandline utility (spiffe-vault) that enables a whole bunch of usecases like secretless deployments, keyless codesigning, keyless encryption.
+
 - [SPIFFE/SPIRE CSI Driver](https://www.kusari.dev/blog/spiffee-csi/)
     - Deploying SPIRE with CSI Driver
 
