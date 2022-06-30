@@ -256,6 +256,9 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 ## Blogs
 
+- [Use SPIRE as an OIDC provider for Kubernetes apiserver](https://gist.github.com/itomsawyer/95897af1145a72ccfe333c13e301438f)
+    - In this article, we will introduce a method to integrate spire with kubernetes. Use spire as an OIDC provider for kubernetes apiserver to authenticate the workload, which can fetch a valid JWT SVID from SPIRE.
+
 - [Azure AD workload identity federation with SPIFFE and SPIRE](https://blog.identitydigest.com/azuread-federate-spiffe/)
     - This blog post explores how services relying on SPIFFE can also use this capability to access Azure resources. No secrets are necessary.
 
