@@ -256,6 +256,9 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 
 ## Blogs
 
+- [On-Premise Workload Identity Federation with GCP using SPIFFE and SPIRE](https://medium.com/google-cloud/workload-identity-federation-for-on-premise-workloads-with-spiffe-24a861b3cf6c)
+    - How SPIFFE solves interoperability by combining SPIFFE and Google Workload Identity for on-premise workloads that communicate with GCP APIs.
+
 - [Use SPIRE as an OIDC provider for Kubernetes apiserver](https://gist.github.com/itomsawyer/95897af1145a72ccfe333c13e301438f)
     - In this article, we will introduce a method to integrate spire with kubernetes. Use spire as an OIDC provider for kubernetes apiserver to authenticate the workload, which can fetch a valid JWT SVID from SPIRE.
 
@@ -317,6 +320,9 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 **[⬆ back to top](#content)**
 
 ## Utils
+
+- [SPIFFE GCP Proxy](https://github.com/GoogleCloudPlatform/professional-services/tree/main/tools/spiffe-gcp-proxy)
+    - This is a simple GOLANG application that provides an Auth proxy for On-Prem workloads that want to use Google Cloud Platform APIs, using SPIFFE and Workload Identity Federation.
 
 - [SPIRE HELM Charts](https://github.com/philips-labs/helm-charts/tree/main/charts/spire)
     - https://github.com/philips-labs/helm-charts/tree/main/charts/spire
