@@ -330,6 +330,9 @@ _Deep dive topics into different SPIRE and SPIFFE concepts as well as advanced u
 - [spire-oidc-discovery-provider](https://github.com/spiffe/spire/tree/main/support/oidc-discovery-provider)
     - The SPIRE OIDC Discovery Provider is a small helper that provides a minimal implementation of a subset of the OIDC discovery document as related to exposing a JSON Web Key Set (JWKS) for JSON Web Token (JWT) validation.
 
+- [spire-controller-manages](https://github.com/spiffe/spire-controller-manager)
+    - SPIRE Kubernetes Controller manager which facilitates the registration of workloads and establishment of federation relationships.
+
 - [k8s-workload-registrar](https://github.com/spiffe/spire/tree/main/support/k8s/k8s-workload-registrar)
     - The SPIRE Kubernetes Workload Registrar implements a Kubernetes ValidatingAdmissionWebhook that facilitates automatic workload registration within Kubernetes.
 
